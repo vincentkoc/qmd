@@ -14,6 +14,10 @@
 - `qmd status` now shows AST grammar availability.
 - SDK: `chunkStrategy` option on `embed()` and `search()` methods.
 - GitHub Actions workflow to build the Nix flake on Linux and macOS.
+- `qmd bench <fixture.json>` command for search quality benchmarks.
+  Measures precision@k, recall, MRR, and F1 across BM25, vector, hybrid,
+  and full pipeline backends. Ships with an example fixture against
+  the eval-docs test collection.
 
 ### Fixes
 
